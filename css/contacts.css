@@ -1,0 +1,234 @@
+.contacts__input, .contacts__textarea, .contacts__item {
+  border: 1px solid;
+  border-image-source: linear-gradient(90deg, #757272, rgba(255, 255, 255, 0));
+  border-image-slice: 1;
+}
+
+.first-screen {
+  padding: 80px 16px 70px;
+  text-align: center;
+  border-bottom: 0.5px solid;
+  border-image-source: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%);
+  border-image-slice: 1;
+  margin-bottom: 150px;
+  position: relative;
+  z-index: 2;
+}
+.first-screen::after {
+  content: url(../img/about/first-screen_bg.png);
+  position: absolute;
+  top: -12%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+.first-screen__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  list-style: none;
+}
+.first-screen__item span::before {
+  content: url(../img/arrow_down.png);
+  display: block;
+}
+.first-screen__link {
+  text-decoration: none;
+  color: #D1D1D1;
+}
+.first-screen__link_main {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: normal;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.first-screen {
+  margin-bottom: 64px;
+}
+
+.contacts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 150px;
+}
+.contacts__item {
+  padding: 54px 60px;
+  background: rgba(37, 37, 50, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.contacts__image {
+  width: 65px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  border: 1px solid;
+  border-top-color: #E95CE9;
+  border-right-color: #E95CE9;
+  border-bottom-color: #0CBAF1;
+  border-left-color: #0CBAF1;
+  border-radius: 50%;
+  background: #18181B;
+  margin-bottom: 32px;
+}
+.contacts__suptitle {
+  margin-bottom: 8px;
+}
+.contacts__text {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: normal;
+  color: #FFFFFF;
+}
+
+.get-in-touch {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 200px;
+}
+.get-in-touch__left-side {
+  width: 50%;
+}
+.get-in-touch__right-side {
+  max-width: 645px;
+  position: relative;
+  z-index: 1;
+}
+.get-in-touch__heading {
+  margin-bottom: 32px;
+}
+.get-in-touch .title_2 {
+  margin-bottom: 16px;
+}
+
+.circles {
+  position: relative;
+  z-index: 1;
+}
+
+.contacts__photo {
+  position: relative;
+}
+.contacts__photo::after {
+  content: url(../img/contacts/contacts_light.png);
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.contacts__input, .contacts__textarea {
+  padding: 11px 15px;
+  background: rgba(37, 37, 50, 0.6);
+  color: #B0B0B2;
+}
+.contacts__input:focus, .contacts__textarea:focus {
+  outline: none;
+}
+.contacts__input {
+  width: 50%;
+}
+.contacts__textarea {
+  width: 100%;
+}
+
+.social__item {
+  width: 46px;
+  height: 46px;
+  border: 1px solid;
+  border-top-color: #E95CE9;
+  border-right-color: #E95CE9;
+  border-bottom-color: #0CBAF1;
+  border-left-color: #0CBAF1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  background: #18181B;
+  position: absolute;
+  z-index: 1;
+}
+.social__item_twitter {
+  top: 19px;
+  left: 0;
+}
+.social__item_fb {
+  bottom: 130px;
+  left: -133px;
+}
+.social__item_insta {
+  bottom: -59px;
+  left: 120px;
+}
+.social__item_git {
+  bottom: 0;
+  right: 0;
+}
+.social__item:hover {
+  background: linear-gradient(90deg, rgba(12, 186, 241, 0.4) 0%, rgba(233, 93, 233, 0.4) 100%);
+}
+.social__link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.form__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 24px;
+}
+
+.circle-1,
+.circle-2 {
+  display: block;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.168627451);
+  position: absolute;
+  top: 58%;
+  left: 44%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.circle-1 {
+  width: 686px;
+  height: 686px;
+}
+
+.circle-2 {
+  width: 564px;
+  height: 564px;
+}
+
+.map {
+  width: 100%;
+  height: 473px;
+  margin-bottom: 77px;
+  position: relative;
+}
+.map::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5490196078);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.map:hover::after {
+  z-index: -1;
+}

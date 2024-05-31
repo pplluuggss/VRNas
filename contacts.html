@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Inter:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/contacts.css">
+    <script src="./js/app.js"></script>
+    <title>Contacts</title>
+</head>
+<body>
+   <div class="wrapper">
+    <!-- Header -->
+    <header class="header container">
+        <div class="logo">
+            <img src="img/logo.png" alt="logo" class="logo__img">
+        </div>
+        <nav class="nav">
+            <ul class="menu">
+                <li class="menu__item">
+                    <a href="./index.html" class="menu__link">Home</a>
+                </li>
+                <li class="menu__item">
+                    <a href="./about.html" class="menu__link">About us</a>
+                </li>
+                <li class="menu__item">
+                    <a href="./service.html" class="menu__link">Service</a>
+                </li>
+                <li class="menu__item">
+                    <a href="./pricing.html" class="menu__link">Price</a>
+                </li>
+                <li class="menu__item">
+                    <a href="./team.html" class="menu__link">Team</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="flex-reverse">
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <button onclick="document.location='./contacts.html'" class="btn header__btn">Contact us</button>
+        </div>
+        
+    </header>
+    <!-- Main -->
+        <section class="first-screen container">
+            <h1 class="title title_1">Contact Us</h1>
+            <ul class="first-screen__nav">
+                <li class="first-screen__item">
+                    <a href="./index.html" class="first-screen__link_main">Menu </a>
+                </li>
+                <li class="first-screen__item">
+                    <span></span>
+                </li>
+                <li class="first-screen__item">
+                    <a href="#" class="first-screen__link">Contact Us</a>
+                </li>
+            </ul>
+        </section>
+        <section class="contacts container">
+            <div class="contacts__item">
+                <div class="contacts__image">
+                    <img src="img/contacts/message.svg" alt="message" class="contacts__img">
+                </div>
+                <p class="contacts__suptitle suptitle">EMAIL</p>
+                <p class="contacts__text">Support@VRNas.com</p>
+            </div>
+            <div class="contacts__item">
+                <div class="contacts__image">
+                    <img src="img/contacts/location.svg" alt="location" class="contacts__img">
+                </div>
+                <p class="contacts__suptitle suptitle">ADDRESS</p>
+                <p class="contacts__text">Tanjung Sari Street no.48, Pontianak City</p>
+            </div>
+            <div class="contacts__item">
+                <div class="contacts__image">
+                    <img src="img/contacts/calling.svg" alt="calling" class="contacts__img">
+                </div>
+                <p class="contacts__suptitle suptitle">PHONE</p>
+                <p class="contacts__text">+123 456 7890</p>
+            </div>
+        </section>
+        <section class="get-in-touch container">
+            <div class="get-in-touch__left-side">
+                <div class="circles">
+                    <div class="contacts__photo">
+                        <img src="img/contacts/contacts_photo.png" alt="contacts_photo" class="contacts__img">
+                    </div>
+                    <span class="circle-1"></span>
+                    <span class="circle-2"></span>
+                    <div class="social__item social__item_twitter">
+                        <a href="#" class="social__link fa-brands fa-twitter fa-xl"></a>
+                    </div>
+                    <div class="social__item social__item_fb">
+                        <a href="#" class="social__link fa-brands fa-facebook-f fa-xl"></a>
+                    </div>
+                    <div class="social__item social__item_insta">
+                        <a href="#" class="social__link fa-brands fa-instagram fa-xl"></a>
+                    </div>
+                    <div class="social__item social__item_git">
+                        <a href="#" class="social__link fa-brands fa-github fa-xl"></a>
+                    </div>
+                </div> 
+            </div>
+            <div class="get-in-touch__right-side">
+                <div class="get-in-touch__heading">
+                    <p class="get-in-touch__suptitle suptitle">CONTACT US</p>
+                    <h2 class="title title_2">Get in Touch</h2>
+                    <p class="get-in-touch__text">At VRNas, we're always happy to hear from our clients and potential clients. Whether you have a question about our VR services, want to discuss a potential project, or just want to say hello, we're here to help.</p>
+                </div>
+                <form class="contacts__form">
+                    <div class="form__wrapper">
+                        <input type="text" class="contacts__input contacts__input_first-name" placeholder="First Name">
+                        <input type="text" class="contacts__input contacts__input_last-name" placeholder="Last Name">
+                    </div>
+                    <div class="form__wrapper">
+                        <input type="email" class="contacts__input contacts__input_email" placeholder="Email">
+                        <input type="tel" class="contacts__input contacts__input_phone" placeholder="Phone Number">
+                    </div>
+                    <textarea name="message"cols="30" rows="7" placeholder="Message" class="contacts__textarea"></textarea>
+                </form>
+            </div>
+        </section>
+        <section id="map" class="map container"></section>
+        
+    
+        <section class="subscribe container">
+        <h3 class="subscribe__text title title_3">Subscribe to our newsletter for latest updates</h3>
+        <form class="subscribe__form">
+            <input type="text" class="subscribe__input" placeholder="Enter your email address">
+            <button type="submit" class="subscribe__btn"></button>
+        </form>
+    </section>
+    <!-- Footer -->
+        <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__wrapper">
+                <div class="footer__left-side">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="logo" class="logo__img">
+                    </div>
+                    <ul class="footer__socials socials">
+                        <li class="socials__item">
+                            <a href="https://twitter.com/" class="socials__link fa-brands fa-twitter fa-xl"></a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="https://www.facebook.com/" class="socials__link fa-brands fa-facebook-f fa-xl"></a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="https://www.instagram.com/" class="socials__link fa-brands fa-instagram fa-xl"></a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="https://github.com/" class="socials__link fa-brands fa-github fa-xl"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__flex-wrapper">
+                    <div class="footer__center">
+                        <div class="footer__support support">
+                            <p class="support__title title title_10">Support</p>
+                            <ul class="support__list">
+                                <li class="support__item">
+                                    <a href="./about.html" class="support__link">About us</a>
+                                </li>
+                                <li class="support__item">
+                                    <a href="./contacts.html" class="support__link">Contact us</a>
+                                </li>
+                                <li class="support__item">
+                                    <a href="./faq.html" class="support__link">FAQ</a>
+                                </li>
+                                <li class="support__item">
+                                    <a href="./terms.html" class="support__link">Tems & Conditions</a>
+                                </li>
+                                <li class="support__item">
+                                    <a href="./privacy.html" class="support__link">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__quicklinks quicklinks">
+                            <p class="quicklinks__title title title_10">Quicklinks</p>
+                            <ul class="quicklinks__list">
+                                <li class="quicklinks__item">
+                                    <a href="./index.html" class="quicklinks__link">Home</a>
+                                </li>
+                                <li class="quicklinks__item">
+                                    <a href="./pricing.html" class="quicklinks__link">Pricing Plan</a>
+                                </li>
+                                <li class="quicklinks__item">
+                                    <a href="./service.html" class="quicklinks__link">Service</a>
+                                </li>
+                                <li class="quicklinks__item">
+                                    <a href="./team.html" class="quicklinks__link">Our Team</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="footer__help help">
+                        <p class="help__title title title_10">Need Help?</p>
+                        <ul class="help__list">
+                            <li class="help__item">
+                                <a href="#" class="help__link help__location">
+                                    Tanjung Sari Street no.48, Pontianak City</a>
+                            </li>
+                            <li class="help__item help__email">
+                                <a href="#" class="help__link">Support@VRNas.com</a>
+                            </li>
+                            <li class="help__item help__phone">
+                                <a href="#" class="help__link">+123 456 7890</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="footer__copyright">© Copyright 2023, All Rights Reserved</p>
+        </div>
+    </footer>
+   </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/16e9aaac58.js" crossorigin="anonymous"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAj75rcIeZpyX8v3QrTncyiKr17kKtv5wY&callback=initMap"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>
